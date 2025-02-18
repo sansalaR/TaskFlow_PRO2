@@ -1,0 +1,47 @@
+/* Background Styling */
+.login-container {
+    background: url("../Assets/bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Form Styling */
+  .form-container {
+    background: rgba(255, 255, 255, 0.2); /* Transparent White */
+    backdrop-filter: blur(10px); /* Blur Effect */
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Inputs */
+  .form-control {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+  }
+  
+  .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .form-label {
+    color: #fff;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    width: 100%;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+  }
+  
+  .btn-danger {
+    width: 100%;
+    margin-left: 1px;
+
+  }
+  
