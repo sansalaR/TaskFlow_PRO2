@@ -1,0 +1,125 @@
+/* Background Styling */
+.admin-container {
+    background: url("../Assets/bg.jpg") no-repeat center center/cover;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    border-radius: 10px;
+  }
+  
+  .navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .d-flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Spacing between buttons */
+  .d-flex.gap-2 .btn {
+    margin-left: 10px;
+  }
+  
+  .btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .add-task-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .add-task-btn:hover {
+    background: #218838;
+  }
+  
+  .logout-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .logout-btn:hover {
+    background: #c82333;
+  }
+  
+  /* Title */
+  .admin-title {
+    color: white;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  /* Table Styling */
+  .table-container {
+    margin: 30px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  
+  /* Table */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    color: white;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .table th {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Buttons */
+  .update-btn {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .update-btn:hover {
+    background: #e0a800;
+  }
+  
+  .delete-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background: #c82333;
+  }
+  
