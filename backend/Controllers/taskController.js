@@ -280,3 +280,32 @@ export const sendDeadlineReminders = async () => {
     console.error("Error sending deadline reminders:", error);
   }
 };
+
+// Mark Task Completed (User only) working
+export const markTaskCompleted = async (req, res) => {
+  const { id } = req.params;
+
+  try {
+    const task = await Task.findById(id);
+    if (!task) {
+      return res.status(404).json({ message: "Task not found" });
+    }
+
+    if (task.completed) {
+      return res.status(400).json({ message: "Task is already completed" });
+    }
+
+    task.completed = true;
+    task.status = "inactive";
+    //(me comment eka on unama ain karaganna) task.completed = req.user._id; // Track which user completed the task
+    await task.save();
+
+    res.json({ message: "Task marked as completed", task });
+  } catch (error) {
+    res.status(400).json({
+      message: "Error marking task as completed",
+      error: error.message,
+    });
+  }
+};
+
