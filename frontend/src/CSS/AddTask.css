@@ -1,0 +1,97 @@
+/* Page Styling */
+body {
+    background-color: #f4f7fc;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Form Container */
+  .form-container {
+    background: linear-gradient(135deg, #8ab8f1, #94c4f8);
+    color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.6s ease-in-out;
+    width: 600px;
+  }
+  
+  /* Form Title */
+  .form-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  /* Form Inputs */
+  .form-control {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #838282;
+    transition: all 0.3s ease-in-out;
+    background-color: #94c4f8;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+    transform: scale(1.02);
+  }
+  
+  /* Motivational Section */
+  .task-info {
+    background: linear-gradient(135deg, #ff7eb3, #75b1ff);
+    color: rgb(247, 242, 242);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .task-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-info ul li {
+    margin: 5px 0;
+    font-size: 1.1rem;
+  }
+  
+  /* Task Illustration */
+  .task-image {
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Fade-In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .task-info {
+      margin-bottom: 20px;
+    }
+  
+    .task-image {
+      margin-top: 20px;
+    }
+  }
+  
